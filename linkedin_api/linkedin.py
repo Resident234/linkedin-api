@@ -809,8 +809,6 @@ class Linkedin(object):
             del item["entityUrn"]
         profile["skills"] = skills
 
-        profile["urn_id"] = profile["entityUrn"].replace("urn:li:fs_profile:", "")
-
         profile['urn_id'] = profile['entityUrn'].replace('urn:li:fs_profile:', '')
 
         return profile
